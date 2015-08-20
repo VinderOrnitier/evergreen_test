@@ -124,27 +124,27 @@ html(lang='ru')
 							.col-md-5.right-part
 								//Product form
 								.form-wrap
-									form(action="", method="post", id="register-form", novalidate="novalidate")
+									form(method="post", id="register-form", novalidate="novalidate")
 										h3 посчитайте прибыль
 										span
 											b добриво 
 											| эффективнее химии
 										hr
 										.lable-wrap
-											lable Выберите культуру
-											select(type="text" required)
+											lable(for="number0") Выберите культуру
+											select(name="number0")
 												option(value="" disabled selected, style='display:none;') Пшеница ≈ 3100 грн / т
 												option(value="0") Ячмень
 												option(value="1") Гречька
 
-											lable Урожайность, ц/га
+											lable(for="number1") Урожайность, ц/га
 											input(type="text", pattern="[0-9]*", id="number1", name="number1" placeholder="20" required)
 
-											lable Стоимость хим. удобрения, грн/га
+											lable(for="number2") Стоимость хим. удобрения, грн/га
 											input(type="text", pattern="[0-9]*", id="number2", name="number2" placeholder="3000" required)
 
-											lable Посевная площадь, га
-											input(type="text", pattern="[0-9]*", placeholder="10" required)
+											lable(for="number3") Посевная площадь, га
+											input(type="text", pattern="[0-9]*", name="number3", placeholder="10" required)
 										hr
 										span.result Прибыль от добрива
 										big.result 50000
