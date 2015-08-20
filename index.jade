@@ -1,0 +1,167 @@
+doctype html
+//[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]
+//[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]
+//[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]
+// [if (gte IE 9)|!(IE)] <!
+html(lang='ru')
+	// <![endif]
+	head
+		meta(charset='utf-8')
+		title Добриво
+		meta(name='description', content='')
+		link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
+		link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='stylesheet', href='libs/bootstrap/css/bootstrap-grid.min.css')
+		link(rel='stylesheet', href='css/main.css')
+		link(rel='stylesheet', href='css/media.css')
+		script(src='libs/modernizr/modernizr.js')
+	body
+		
+		header
+			.container
+				.row
+					.col-md-10.col-md-offset-1
+						// Menu container
+						.header-wrap
+							// 1 Menu line
+							.top-mnu
+								h1 Добриво
+								nav
+									ul
+										li
+											a(href="") Оплата и доставка
+										li
+											a(href="") Новости
+										li
+											a(href="") Справочник
+										li
+											a(href="") Сертификаты
+								.select-wrap
+									select
+										option RU
+										option UA
+							//END 1 Menu line
+							//2 Menu line
+							.menu
+								nav
+									.mobile-nav-toggle: span
+									ul
+										li
+											a(href="") Нагро-удобрение
+										li
+											a(href="") Биодизель
+										li
+											a(href="") Силко
+										li
+											a(href="") Интернет-магазин
+										li
+											a(href="") Вопросы-ответы
+										li
+											a(href="") Контакты
+									.basket
+										a(href="") Корзина
+							// END 2 Menu line
+							// END Menu container
+							// Main Title
+							.title
+								h1 органическое
+								h1 нано-удобние
+								h1 добриво
+							//END Main Title
+		// Section sfter header
+		section.section-2
+			.container
+				.row
+					.col-md-12
+						.row
+							.col-md-7
+								//Left part of Section
+								.row.left-part
+									.col-md-5.col-sm-6.col-xs-12
+										//Left part of Product with image
+										.product
+											img(src="img/bottle.png", alt="alt")
+											p Хотитите трали-вали ла-лала?
+										//END Left part of Product with image
+									.col-md-7.col-sm-6.col-xs-12
+										//Right part of Product with features
+										.product-features
+											//Product features
+											.features-wrap
+												.feature
+													img(src="img/star-icon.png", alt="alt")
+													.feature-text
+														h4 прирост урожая
+														small в сравнении с химическим удобрением
+														span 30%-250%
+
+												.feature
+													img(src="img/star-icon.png", alt="alt")
+													.feature-text
+														h4 экономия
+														small химических удобрений в хозяйстве
+														span до 70%
+
+												.feature
+													img(src="img/star-icon.png", alt="alt")
+													.feature-text
+														h4 рост корневой
+														small системы растений при использовании
+														span в 3-10раз
+											//END Product features
+											//Call to action box
+											.cta-wrap
+												h1 узнайте<br>о нагро больше!
+												a.cta-btn узнать больше
+											//END Call to action box
+										//END Right part of Product with features
+								//END Left part of Section
+							//Right part of Section
+							.col-md-5.right-part
+								//Product form
+								.form-wrap
+									form(action="", method="post", id="register-form", novalidate="novalidate")
+										h3 посчитайте прибыль
+										span
+											b добриво 
+											| эффективнее химии
+										hr
+										.lable-wrap
+											lable Выберите культуру
+											select(type="text" required)
+												option(value="" disabled selected, style='display:none;') Пшеница ≈ 3100 грн / т
+												option(value="0") Ячмень
+												option(value="1") Гречька
+
+											lable Урожайность, ц/га
+											input(type="text", pattern="[0-9]*", id="number1", name="number1" placeholder="20" required)
+
+											lable Стоимость хим. удобрения, грн/га
+											input(type="text", pattern="[0-9]*", id="number2", name="number2" placeholder="3000" required)
+
+											lable Посевная площадь, га
+											input(type="text", pattern="[0-9]*", placeholder="10" required)
+										hr
+										span.result Прибыль от добрива
+										big.result 50000
+										span грн.
+								//END Product form
+							//END Right part of Section
+		//END Section sfter header
+		//Preloader
+		.loader
+			.loader_inner
+		//[if lt IE 9]>
+				<script src="libs/html5shiv/es5-shim.min.js"></script>
+				<script src="libs/html5shiv/html5shiv.min.js"></script>
+				<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+				<script src="libs/respond/respond.min.js"></script>
+				<![endif]
+		script(src='libs/jquery/jquery-1.11.2.min.js')
+		script(src='libs/backstretch/jquery.backstretch.min.js')
+		script(src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js")
+		script(src='js/common.js')
